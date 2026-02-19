@@ -8,6 +8,12 @@ El objetivo es familiarizarse con la estructura de un proyecto MVC y ejecutar la
 
 ---
 
+## 🎯 Objetivo Académico
+
+Explorar y comprender la estructura básica de un proyecto ASP.NET Core MVC.
+
+---
+
 ## 🏗 Estructura del Proyecto
 
 El proyecto incluye las siguientes carpetas principales:
@@ -17,6 +23,25 @@ El proyecto incluye las siguientes carpetas principales:
 - **Views** → Contiene las vistas Razor (.cshtml).
 - **wwwroot** → Archivos estáticos (CSS, JS, Bootstrap).
 - **Program.cs** → Configuración principal del proyecto.
+
+---
+
+🔄 Flujo del Patrón MVC
+El siguiente diagrama muestra cómo funciona el flujo de una petición en ASP.NET Core MVC:
+
+<img width="1536" height="1024" alt="ChatGPT Image Feb 18, 2026, 09_49_06 PM" src="https://github.com/user-attachments/assets/31506d1c-4876-4555-b5bc-7c322fcaa4f5" />
+
+- **Explicación del Flujo:**
+
+- 1- El navegador realiza una solicitud a /Home/Index.
+
+- 2- El HomeController ejecuta la acción Index().
+
+- 3- Se renderiza la vista Index.cshtml.
+
+- 4- La vista utiliza Layout.cshtml como plantilla base.
+
+- 5- Se envía la respuesta HTML final al navegador.
 
 ---
 
@@ -34,12 +59,6 @@ Al ejecutar el proyecto, la aplicación corre en: https://localhost:7209
 2. El enrutamiento dirige la solicitud a `HomeController`.
 3. El método `Index()` devuelve la vista correspondiente.
 4. La vista se renderiza utilizando `_Layout.cshtml`.
-
----
-
-## 🎯 Objetivo Académico
-
-Explorar y comprender la estructura básica de un proyecto ASP.NET Core MVC.
 
 ---
 
